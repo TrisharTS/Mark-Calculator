@@ -1,0 +1,165 @@
+<html>
+  <head>
+       <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cssi/contact.css">
+    <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Home | Contact </title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="img/img2.jpeg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse "id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a style="color:black;"class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services            </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a style="color:black;" class="dropdown-item" href="cgpamain.html">CGPA Calculator</a>
+          <a style="color:black;" class="dropdown-item" href="sgpamain.html">SGPA Calculator</a>
+          <a style="color:black;" class="dropdown-item" href="percent.html">CGPA/SGPA Percentage</a>
+        </div>
+        </li>
+            <li class="nav-item">
+              <a style="color:black;" class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+               <a style="color:black" class="nav-link" href="privacy.html">Privacy Policy</a>
+            </li>
+         </ul>
+       </div>
+    </nav>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <div class="container">
+         <div class="row justify-content-center align-items-center">
+
+             <div class="col-12 col-sm-5 justify-content-center align-items-center">
+                <form action = "forms/contact.php" method="POST">
+                <div class="shadow-lg" style="border: 1px solid #7bebff; text-align:center;background-color: white;">
+                    <h3 style="color:blue;" class="mt-4 ml-2">Drop Us A Message</h3>
+                    <hr style=" margin-left: 50px;margin-right: 50px;">
+                          <i class="fa fa-user icon"></i>
+                          <input type="text" class="ml-4"  name="name" placeholder="Enter Name" required>
+                          <br>
+                          <br>
+                          <i class="fa fa-envelope icon"></i>
+                          <input type="email" class="ml-4"  name="mail" placeholder="You@example.com" required>
+                          <br>
+                          <br>
+                          <i class="fa fa-phone icon"></i>
+                            <input type="text" oninvalid="if (this.value != '') {setCustomValidity('Please enter a valid mobile number')}" onkeyup="try{setCustomValidity('')}catch(e){console.log(e)}" pattern="^[6-9][0-9]{9}$" autofocus maxlength="10" name="phone" class="ml-4"  placeholder="Your 10 digit number"
+                          required >
+                        <br>
+                          <br>
+                          <br>
+                          <textarea id="form-content-message" class="  md-textarea" name="message" rows="4" cols="35" placeholder="      Your Message"></textarea>
+                          <br>
+                         <br>
+                         <div class="d-none d-sm-block">
+                         <button type="submit" class=" btn-lg btn-primary ">
+                            <i class=" fa fa-paper-plane"  type="submit" name="submit" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <div class="d-block d-sm-none">
+                        <button class="btn-lg ex" type="submit"><i class="fa fa-send"></i></button>
+                      </div>
+                         <br>
+                         <br>
+
+                </div>
+             </form>
+             </div>
+             <br>
+             <div style="margin-left:-32px;margin-top:-17px;" class="d-none d-sm-block col-12 col-sm-5 justify-content-center ">
+                <div class="shadow-lg" style="height:479px;border:1px solid #7bebff ; text-align: center;  background-color:#e1f6fc;">
+                      <h3 class="mt-4">Contact Info</h3>
+                        <hr style="margin-left: 50px;margin-right: 50px;">
+                    <div class="icon">
+                          <a style="color:black;"href="#"><i class="fa fa-phone" aria-hidden="true"></i> : +91 9164892585</a> <br>
+                          <a style="color:#000000;" href="#">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i class=" fa fa-envelope" aria-hidden="true"></i>&nbsp :&nbsphelp@markcalculator.in</a>
+                     </div>
+                          <hr style="margin-left: 50px;margin-right: 50px;">
+                          <br>
+                          <br>
+                          <h3 class="mt-2">Connect Us</h3>
+                          <br>
+                          <div class="social-icon">
+                        <ul>
+                          <li><a  href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="https://linkedin.com/in/mark-calculator"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                              <li><a href="https://github.com/markcalculator"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/mark_calculator"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        </ul>
+                      </div>
+                </div>
+             </div>
+             <div style="margin-top:-18px;" class="d-block d-sm-none col-12 col-sm-5 justify-content-center ">
+                <div class="shadow-lg" style="height:447px;border:1px solid #7bebff ; text-align: center; background-color:#e1f6fc;">
+                    <br><br>  <h3 class="mt-4">Contact Info</h3>
+                        <hr>
+                    <div class="icon">
+                          <a style="color:black;"href="#"><i class="fa fa-phone" aria-hidden="true"></i> : 91+9164892585</a> <br>
+                        <a style="color:#000000;" href="#">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i class=" fa fa-envelope" aria-hidden="true"></i>&nbsp :&nbsphelp@markcalculator.in</a>
+                     </div>
+                          <hr>
+                          <br>
+                          <br>
+                          <h3 class="mt-2">Connect Us</h3>
+                          <br>
+                          <div class="social-icon">
+                            <ul>
+                              <li><a  href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="https://linkedin.com/in/mark-calculator"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                  <li><a href="https://github.com/markcalculator"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/mark_calculator"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            </ul>
+                      </div>
+                </div>
+             </div>
+
+
+         </div>
+     </div>
+
+    <!--Footer-->
+    <footer id="footer" class="footer" style="margin-top: 40px;">
+        <div class=" footo container">
+         <div class="row justify-content-center">
+          <div class="col-auto">
+            <a  href="index.html">Home &nbsp&nbsp&nbsp</a>
+            <a  href="privacy.html">Privacy Policy &nbsp&nbsp&nbsp</a>
+            <a  href="tc.html">T & C &nbsp&nbsp&nbsp</a>
+            <a  href="contact.html">Contact</a>
+          </div>
+       </div>
+       <br>
+         <div class="row justify-content-center">
+           <div class="col-auto">
+             <p style="text-align: center;">©️ 2020 by <a href="#">MarkCalculator</a></p>
+           </div>
+         </div>
+       </div>
+     </footer>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179516780-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179516780-1');
+</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="cssi/sgpa.css">
+    <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Home | Cv8sem</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img src="img/img2.jpeg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse "id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a style="color:black;"class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services            </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a style="color:black;" class="dropdown-item" href="cgpamain.html">CGPA Calculator</a>
+        <a style="color:black;" class="dropdown-item" href="sgpamain.html">SGPA Calculator</a>
+        <a style="color:black;" class="dropdown-item" href="percent.html">CGPA/SGPA Percentage</a>
+      </div>
+     </li>
+         <li class="nav-item">
+            <a style="color:black;" class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a style="color:black;" class="nav-link" href="privacy.html">Privacy Policy</a>
+         </li>
+       </ul>
+     </div>
+   </nav>
+<!--Body-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row justify-content-center align-items-center">
+    <div id="box" style="width:600px;text-align:center; background-color: #fff; border: 1px solid #7bebff;" class="col-auto col-sm-auto shadow-lg p-5 mt-3 mb-3 rounded">
+      <h2 style="text-align: center;">SGPA Calculator</h2>
+      <hr>
+      <form method="POST">
+        <h5 style="text-align: center;">Enter the Marks - Semester VIII</h5>
+        <p style="text-align: center;" class="text-secondary">Civil Engineering</p>
+        <br>
+        <div class="form-group grove">
+          <label for="SUBJECT1"><h6>Design of PsC :</h6></label>
+          <input style="width:200px; border-radius:20px;border-width: 2px;border-color:black;" type="number" id="mark1" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+        </div>
+        <div class="form-group grove">
+          <label for="SUBJECT2"><h6>PR.EL-4 &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp :</h6></label>
+          <input style="width:200px; border-radius:20px;border-width: 2px;border-color:black;"type="number" id="mark2" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+        </div>
+         <div class="form-group grove">
+           <label for="SUBJECT4"><h6>Proj.Work &nbsp &nbsp &nbsp :</h6></label>
+           <input style="width:200px; border-radius:20px;border-width: 2px;border-color:black;" type="number"id="mark3" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+         </div>
+         <div class="form-group grove">
+           <label for="SUBJECT5"><h6>Tech.Seminar :</h6></label>
+           <input style="width:200px; border-radius:20px;border-width: 2px;border-color:rgb(0, 0, 0);" type="number" id="mark4" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+          </div>
+          <div class="form-group grove">
+              <label for="SUBJECT5"><h6>Internship &nbsp &nbsp :</h6></label>
+              <input style="width:200px; border-radius:20px;border-width: 2px;border-color:rgb(0, 0, 0);" type="number" id="mark5" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+             </div>
+
+      </form>
+       <button style="border-radius:10px;" onclick="calculator()" type="submit" class="btn btn-outline-primary btn-lg">Submit</button>
+       <br>
+       <br>
+        <h3>SGPA Secured</h3>
+       <div id="sgpa">
+           <p style="text-align:center;font-size:19px;"id="sgp">-> Result Will Appear Here <- </p>
+       </div>
+
+        <h3>Percentage Secured</h3>
+      <div id="perc">
+        <p style="text-align:center;font-size:19px;"id="per">-> Result Will Appear Here <- </p>
+       </div>
+
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row align-items-center justify-content-center">
+      <div class="col-auto col-sm-auto">
+          <br>
+          <p style="text-align: center;">More Services</p>
+          <hr>
+          <div>
+           <a href="cgpamain.html"><h6 style="text-align: center;color: black;">CGPA Calculator</h6></a>
+           <a href="percent.html"><h6 style="text-align: center;color: black;">CGPA Percentage</h6></a>
+          </div>
+      </div>
+  </div>
+</div>
+    <!--Footer-->
+    <footer id="footer" class="footer">
+      <div class=" footo container">
+      <br> <div class="row justify-content-center">
+        <div class=" d-none d-sm-block col-auto">
+          <a  href="index.html">Home &nbsp&nbsp&nbsp</a>
+          <a  href="privacy.html">Privacy Policy &nbsp&nbsp&nbsp</a>
+          <a  href="tc.html">T & C &nbsp&nbsp&nbsp</a>
+          <a  href="contact.html">Contact</a>
+        </div>
+        <div class=" d-block d-sm-none col-12">
+          <h5>Links</h5>
+         <hr>
+          <ul class="list-unstyled">
+            <li><a  href="index.html"><h6>Home</h6></a></li>
+            <li><a  href="contact.html"><h6>Contact Us</h6></a></li>
+             <li><a  href="privacy.html"><h6>Privacy Policy</h6></a></li>
+            <li><a  href="tc.html"><h6>Terms and Conditions</h6></a></li>
+          </ul>
+        </div>
+     </div>
+       <div class="row justify-content-center">
+         <div class="d-none d-sm-block  col-auto">
+           <br><p>©️ 2020 by <a href="#">MarkCalculator</a></p>
+         </div>
+         <div class="d-block d-sm-none   col-auto">
+           <p>©️ 2020 by <a href="#">MarkCalculator</a></p>
+         </div>
+       </div>
+     </div>
+   </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="jsi/8sem.js"></script>
+  </body>
+</html>

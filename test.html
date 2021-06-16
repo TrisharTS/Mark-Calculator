@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center">
+    <div id="box" style="width:600px;text-align:center; background-color: #fff; border: 1px solid #7bebff;" class="col-auto col-sm-auto shadow-lg p-5 mt-3 mb-3 rounded">
+      <h2 style="text-align: center;">SGPA Calculator</h2>
+      <hr>
+      <form method="POST">
+        <h5 style="text-align: center;">Enter the Marks - Semester VI</h5>
+        <p style="text-align: center;" class="text-secondary">Information science Engineering</p>
+        <br>
+        <div class="form-group grove">
+          <label for="SUBJECT1"><h6>FS &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :</h6></label>
+          <input style="width:200px; border-radius:20px;border-width: 2px;border-color:black;" type="number" id="mark1" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+        </div>
+        <div class="form-group grove">
+          <label for="SUBJECT2"><h6>ST &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :</h6></label>
+          <input style="width:200px; border-radius:20px;border-width: 2px;border-color:black;"type="number" id="mark2" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+        </div>
+        <div class="form-group grove">
+          <label for="SUBJECT3"><h6>WT &nbsp &nbsp &nbsp &nbsp &nbsp :</h6></label>
+          <input style="width:200px; border-radius:20px;border-width: 2px;border-color:black;" type="number" id="mark3" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+         </div>
+         <div class="form-group grove">
+           <label for="SUBJECT4"><h6>P.EL-1 &nbsp &nbsp &nbsp &nbsp:</h6></label>
+           <input style="width:200px; border-radius:20px;border-width: 2px;border-color:black;" type="number"id="mark4" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+         </div>
+         <div class="form-group grove">
+           <label for="SUBJECT5"><h6>O.EL-A &nbsp &nbsp &nbsp:</h6></label>
+           <input style="width:200px; border-radius:20px;border-width: 2px;border-color:rgb(0, 0, 0);" type="number" id="mark5" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+          </div>
+          <div class="form-group grove">
+            <label for="SUBJECT6"><h6>Mob.App&nbsp&nbsp:</h6></label>
+            <input style="width:200px; border-radius:20px;border-width: 2px;border-color:black;" type="number" id="mark6" min="0" max="100" name="quantity" placeholder="  Enter Marks" required>
+          </div>
+          <h6 style="text-align: center;">Lab-All</h6>
+          <div class="form-group grove">
+            <label for="SUBJECT5"><h6>STL &nbsp &nbsp &nbsp &nbsp&nbsp :</h6></label>
+            <input style="width:200px; border-radius:20px;border-width: 2px;border-color:rgb(0, 0, 0);" type="number" min="0" max="100" id="mark8" name="quantity" placeholder="  Enter Marks">
+           </div>
+           <div class="form-group grove">
+             <label for="SUBJECT6"><h6>FSL &nbsp &nbsp &nbsp &nbsp&nbsp :</h6></label>
+             <input style="width:200px; border-radius:20px;border-width: 2px;border-color:black;" type="number" id="mark9" min="0" max="100" name="quantity" placeholder="  Enter Marks">
+           </div>
+      </form>
+       <button style="border-radius:10px;"  onclick="calculator()" type="submit" class="btn btn-outline-primary btn-lg">Submit</button>
+       <br>
+       <br>
+        <h3>SGPA Secured</h3>
+       <div id="sgpa">
+           <p style="text-align:center;font-size:19px;"id="sgp">-> Result Will Appear Here <- </p>
+       </div>
+
+        <h3>Percentage Secured</h3>
+      <div id="perc">
+        <p style="text-align:center;font-size:19px;"id="per">-> Result Will Appear Here <- </p>
+       </div>
+
+    </div>
+  </div>
+</div>

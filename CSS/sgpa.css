@@ -1,0 +1,244 @@
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    width:768px;
+  }
+
+}
+body{
+    width:100%;
+    background-color:#F4FCFC;
+}
+
+.navbar {
+  background-color:#FFFFFF;
+}
+
+.navbar .navbar-toggler {
+  box-shadow: 2px 3px 3px 3px rgba(3,3,0,.3);
+}
+
+.navbar-light span.navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='blue ' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+color:rgb(17, 160, 255)  ;
+}
+.navbar  .navbar-toggler:hover {
+  background-color:#41ADE3;
+}
+.navbar-brand img {
+margin-left:105px;
+}
+.navbar .nav-item #navbarDropdownMenuLink {
+color:black;
+}
+.navbar-brand img {
+margin-left:105px;
+}
+
+.navbar .nav-item #navbarDropdownMenuLink {
+  color:black;
+  }
+  .navbar-brand img {
+  margin-left:105px;
+  }
+  @media (max-width:900px) {
+  .navbar-brand img {
+    margin-left:0px;
+  }
+  }
+
+  @media (max-width:1000px) {
+
+  .navbar  #navbarNav {
+    background-color:#CEE4EF;
+    border-radius:5px;
+  }
+}
+
+.footer :hover{
+  text-decoration: none;
+}
+.icon {
+  margin-bottom: 10px;
+}
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+
+  @-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+.grove :hover, :focus{
+    background: azure;
+    cursor: pointer;
+    transition-property: all;
+    outline: white;
+
+}
+
+#sgpa {
+    border: 1px solid black;
+    background-color: #c7efff;
+    padding-top:10px;
+    border-radius: 10px;
+  }
+
+#perc {
+  border: 1px solid black;
+  background-color: #c7efff;
+  border-radius: 10px;
+  padding-top:10px;
+}
+#sgpac {
+  border: 1px solid black;
+  background-color: #c7efff;
+  padding-top: 10px;
+  padding-left: 5px ;
+  padding-right: 5px ;
+  border-radius: 10px;
+
+}
+
+  @media only screen and (max-width: 650px) {
+    #box {
+      max-width: 355px;
+    }
+    }
+    @media only screen and (max-width: 650px) {
+      .card, .card-header, .card-body, .card-footer {
+        max-width: 355px;
+      }
+      }
+.info {
+  color: #444444;
+}
+
+.info i {
+  font-size: 32px;
+  color: #3498db;
+  float:left;
+  line-height: 1;
+}
+
+.info p {
+  padding: 0 0 10px 42px;
+  line-height: 28px;
+
+}
+.social-icon ul{
+  position:relative;
+  display:inline-flex;
+  }
+  .social-icon ul li{
+  list-style:none;
+  margin:0px 15px;
+  }
+  .social-icon ul li .fa{
+  font-size:20px;
+  line-height: 43px;
+  transition: -6s;
+  }
+  .social-icon ul li .fa:hover{
+  color:#fff;
+  }
+  .social-icon ul li a{
+  position:relative;
+  display:block;
+  height:40px;
+  width:40px;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 3px 3px 3px rgba(146, 146, 139, 0.9);
+  }
+  .social-icon ul li a:hover{
+  transform: translateY(-5px);
+  background-color:#41ADE3;
+  }
+  .icon .fa {
+  font-size:24px;
+  color:#41ADE3;
+  }
+  .social-icon{
+    margin-left:-45px;
+  }
+
+h1, p, a:hover {
+text-decoration:none ;
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+ #but1 .btn{
+  margin-left:17px;
+  border-color:#F4FCFC;
+}
+#but2 .btn{
+ margin-left:-2px;
+ border-color:#F4FCFC;
+}
+
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1366px){
+  #but1 .btn{
+   margin-left:-7px;
+   border-color:#F4FCFC;
+ }
+ #but2 .btn{
+  margin-left:-6px;
+  border-color:#F4FCFC;
+}
+ #but3 .btn{
+  margin-left:-7px;
+  border-color:#F4FCFC;
+}
+#but4 .btn{
+ margin-left:-6px;
+ border-color:#F4FCFC;
+}
+#but5 .btn{
+ margin-left:-2px;
+ border-color:#F4FCFC;
+}
+
+#sgpa {
+  border: 1px solid black;
+  background-color: #c7efff;
+  padding-top:10px;
+  border-radius: 10px;
+}
+
+#perc {
+border: 1px solid black;
+background-color: #c7efff;
+border-radius: 10px;
+padding-top:10px;
+}
+
+}
+@media screen and (min-device-width: 532px) and (max-device-width: 769px) {
+  .footer {
+    width:836px;
+  }
+
+}
+.footer {
+  
+  padding-bottom: -5px;
+  color:rgb(0, 0, 0);
+  text-align:center;
+  background-color: #e1f6fc;
+  width: 100%;
+  margin-top:10px;
+}
