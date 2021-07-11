@@ -18,25 +18,22 @@ const calculator =() =>
   var mark8=document.getElementById('mark8').value;
 
   function getgrade(item)
-  {
-   if(item<40 && item>=0)
-        return 0;
-    else if(item<45 && item>=40)
-        return 4;
-    else if(item<50 && item>=45)
-        return 5;
-    else if (item<60 && item>=50)
-        return 6;
-    else if(item<70 && item>=60)
-        return 7;
-    else if(item<80 && item>=70)
-        return 8;
-    else if(item<90 && item>=80)
-        return 9;
-    else if(item<=100 && item>=90)
-        return 10;
-
-    }
+      {
+       if(item<40 && item>=0)
+            return 0;
+        else if(item<45 && item>=40)
+            return 4;
+        else if(item<60 && item>=45)
+            return 6;
+        else if (item<70 && item>=60)
+            return 7;
+        else if(item<80 && item>=70)
+            return 8;
+        else if(item<90 && item>=80)
+            return 9;
+        else if(item<=90 && item<=100)
+            return 10;
+        }
     if((mark1=="")||(mark2=="")||(mark3=="")||(mark4=="")||(mark5=="")||(mark6=="")||(mark7=="")||(mark8==""))
     {
         alert("Please fill out all fields");

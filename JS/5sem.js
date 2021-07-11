@@ -18,26 +18,23 @@ const calculator =() =>
   var mark8=document.getElementById('mark8').value;
   var mark9=document.getElementById('mark9').value;
 
-  function getgrade(item)
-  {
-   if(item<40 && item>=0)
-        return 0;
-    else if(item<45 && item>=40)
-        return 4;
-    else if(item<50 && item>=45)
-        return 5;
-    else if (item<60 && item>=50)
-        return 6;
-    else if(item<70 && item>=60)
-        return 7;
-    else if(item<80 && item>=70)
-        return 8;
-    else if(item<90 && item>=80)
-        return 9;
-    else if(item<=100 && item>=90)
-        return 10;
-
-    }
+ function getgrade(item)
+      {
+       if(item<40 && item>=0)
+            return 0;
+        else if(item<45 && item>=40)
+            return 4;
+        else if(item<60 && item>=45)
+            return 6;
+        else if (item<70 && item>=60)
+            return 7;
+        else if(item<80 && item>=70)
+            return 8;
+        else if(item<90 && item>=80)
+            return 9;
+        else if(item<=90 && item<=100)
+            return 10;
+        }
     if((mark1=="")||(mark2=="")||(mark3=="")||(mark4=="")||(mark5=="")||(mark6=="")||(mark7=="")||(mark8=="")||(mark9==""))
     {
         alert("Please fill out all fields");
@@ -54,11 +51,10 @@ const calculator =() =>
     mark4=credit3*getgrade(mark4);
     mark5=credit3*getgrade(mark5);
     mark6=credit3*getgrade(mark6);
-    mark7=credit2*getgrade(mark7);
+    mark7=credit1*getgrade(mark7);
     mark8=credit2*getgrade(mark8);
-    mark9=credit1*getgrade(mark9);ss
+    mark9=credit2*getgrade(mark9);
     total=parseFloat(mark1)+parseFloat(mark2)+parseFloat(mark3)+parseFloat(mark4)+parseFloat(mark5)+parseFloat(mark6)+parseFloat(mark7)+parseFloat(mark8)+parseFloat(mark9);
-
     sgpa=total/25;
     document.getElementById('sgp').innerHTML=parseFloat(`${sgpa}`).toFixed(2);
     perc=((sgpa*10)-7.5);
