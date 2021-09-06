@@ -7,7 +7,11 @@ const calculator = () =>
       alert("Please enter values between 0 to 10");
     }
     else{
-    per=((cgpa*10)-7.5);
+    per=((cgpa-0.75)*10);
+    if(per<0)
+    {
+      alert("Please fill out all fields");
+    }
     document.getElementById('result').innerHTML=parseFloat(`${cgpa}`).toFixed(2);
     document.getElementById('perce').innerHTML=parseFloat(`${per}`).toFixed(2)+"%";
     }
