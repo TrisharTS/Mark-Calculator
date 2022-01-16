@@ -14,13 +14,13 @@ const calculator = () =>
   }
   if(mark1 == "")
   {
-    mark2=0;
+    mark1=0;
     no--;
     tc=tc-20;
   }
    if(mark2 == "")
    {
-     mark1=0;
+     mark2=0;
      no--;
      tc=tc-20;
    }
