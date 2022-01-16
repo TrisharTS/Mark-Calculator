@@ -20,7 +20,7 @@ const calculator = () =>
   }
    if(mark2 == "")
    {
-     mark2=0;
+     mark1=0;
      no--;
      tc=tc-20;
    }
