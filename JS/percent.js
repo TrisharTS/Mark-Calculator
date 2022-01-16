@@ -12,7 +12,9 @@ const calculator = () =>
     {
       alert("Please fill out all fields");
     }
+   if(per>=0 && per<=100) {
     document.getElementById('result').innerHTML=parseFloat(`${cgpa}`).toFixed(2);
     document.getElementById('perce').innerHTML=parseFloat(`${per}`).toFixed(2)+"%";
     }
+   }
   }
